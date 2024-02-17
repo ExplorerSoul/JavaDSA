@@ -1,15 +1,15 @@
 import java.util.Scanner;
 
-public class pattern_07 {
+public class pattern_08 {
 
     static void pattern(int n){
         for(int row = 0; row<n; row++){
             // print spaces from col 1 to n-row-1
-            for(int s=1; s<=n-row-1; s++){
+            for(int s=0; s<row; s++){
                 System.out.print(" ");
             }
-            // after that print stars to col (2*row)+1
-            for(int m=1; m<=2*row+1; m++){
+            // after that print stars
+            for(int m=(2*n)-(2*row+1); m>0; m--){
                 System.out.print("*");
             }
             // add new line
@@ -23,3 +23,4 @@ public class pattern_07 {
     scanner.close();
     }
 }
+
