@@ -15,7 +15,7 @@ public class pattern_05 {
         // For loop 'row' in range 0 to N-1.
         for(int row = 0; row < n; row++)
         {
-            // For loop 'col' in range 0 to row.
+            // For loop 'col' in range 0 to n-row+1.
             for(int col = 1; col < n-row+1; col++)
             {
                 System.out.print("* ");

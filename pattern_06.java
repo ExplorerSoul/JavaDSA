@@ -16,13 +16,9 @@ public class pattern_06 {
         for(int row = 0; row < n; row++)
         {
             // For loop 'col' in range 0 to row.
-            for(int col = 0; col < n; col++)
+            for(int col = 1; col < n-row+1; col++)
             {
-                // If 'col' < N-'row', print  a '*'.
-                if(col < (n-row))
-                {
-                    System.out.print("* ");
-                }
+               System.out.print(col + " ");
             }
             System.out.println();
         }
