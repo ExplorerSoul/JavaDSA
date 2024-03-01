@@ -1,19 +1,21 @@
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class arrays_01 {
     public static void main(String[] args) {
         // Q. store a roll number
-        int a = 19;
+        // int a = 19;
 
         // Q. store a person's name
-        String name = "Amit Ranjan Das";
+        // String name = "Amit Ranjan Das";
 
         // Q. store 5 roll numbers
-        int rno1 = 12;
-        int rno2 = 15;
-        int rno3 = 25;
-        int rno4 = 86;
-        int rno5 = 42;
+        // int rno1 = 12;
+        // int rno2 = 15;
+        // int rno3 = 25;
+        // int rno4 = 86;
+        // int rno5 = 42;
 
         // consider of storing 500 roll numbers
 
@@ -36,20 +38,47 @@ public class arrays_01 {
         // // or directly
         // int[] rnos2 = {23,56,54,96,3};
 
-        int[] ros; // declaration of array. ros is getting defined in the stack
-        ros = new int[5]; // initialization: actually here object is being created int memory (heap)
+        // int[] ros; // declaration of array. ros is getting defined in the stack
+        // ros = new int[5]; // initialization: actually here object is being created int memory (heap)
         
         // System.out.println(ros[1]);
 
-        String[] arr = new String[4];
+        // String[] arr = new String[4];
         // System.out.println(arr[0]); // prints null
 
 
         // actual happenings
-        input(a);
-        input_large(a);
+        // input(a);
+        // input_large(a);
+
+
+        // array of objects
+
+        // Scanner sc = new Scanner(System.in);
+        // String[] str = new String[4];
+        // for(int i = 0; i < str.length; i++){
+        //     str[i] = sc.next();
+        // }
+        // System.out.println(Arrays.toString(str));
+        // sc.close();
+
+
+        // modify
+
+        // str[1] = "amit";
+        // System.out.println(Arrays.toString(str));
+
+        // passing in functions
+        int[] nums = {3,4,6,22,7};
+        System.out.println(Arrays.toString(nums));
+        change(nums);
+        System.out.println(Arrays.toString(nums));
+
         
 
+    }
+    static void change(int[] arr){
+        arr[0] = 10;
     }
 
     static void input(int a){
@@ -67,22 +96,33 @@ public class arrays_01 {
     }
 
     static void input_large(int a){
-        Scanner sc = new Scanner(System.in);
+        // Scanner sc = new Scanner(System.in);
 
-        int[] arr1 = new int[5];
-        for(int i = 0; i<arr1.length; i++){
-            arr1[i] = sc.nextInt();
-        }
-        System.out.print("[ ");
-        for(int i = 0; i<arr1.length; i++){
-            System.out.print(arr1[i]);
-            if(i<arr1.length-1){
-            System.out.print(", ");
-            }
-            else{
-                System.out.println(" ]");
-            }
-        }
-        sc.close();
+        // int[] arr1 = new int[5];
+        // for(int i = 0; i<arr1.length; i++){
+        //     arr1[i] = sc.nextInt();
+        // }
+        // System.out.print("[ ");
+        // for(int i = 0; i<arr1.length; i++){
+        //     System.out.print(arr1[i]);
+        //     if(i<arr1.length-1){
+        //     System.out.print(", ");
+        //     }
+        //     else{
+        //         System.out.println(" ]");
+        //     }
+        // }
+
+        // for(int num : arr1){    // for every element in array , print the element
+        //     System.out.print(num + " ");  // here num represents element of the array
+        // }
+
+        // System.out.println(arr1[5]);    // index out of bound error
+
+        // System.out.println(Arrays.toString(arr1));
+
+
+        
+        // sc.close();
     }
 }
