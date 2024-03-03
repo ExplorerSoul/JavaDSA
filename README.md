@@ -12,3 +12,8 @@ https://www.javatpoint.com/operators-in-java
 KEYWORDS
 <br>
 https://www.javatpoint.com/java-keywords
+<br>
+I found Kunal Kushwaha's "Java+DSA+interview" youtube playlist most interesting and helpful for preparing my dsa knowledge
+<br>
+https://www.youtube.com/playlist?list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ
+<br>
