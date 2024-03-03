@@ -18,16 +18,16 @@ public class arrays_02 {
         //     {6, 7, 8, 9}
         // };
         
-        Scanner sc = new Scanner(System.in);
-        int[][] arr = new int[3][3];
-        System.out.println(arr.length); // prints number of rows of array
+        // Scanner sc = new Scanner(System.in);
+        // int[][] arr = new int[3][3];
+        // System.out.println(arr.length); // prints number of rows of array
         // input
-        for(int row = 0; row<arr.length; row++){
-            // for each col in every row
-            for(int col = 0; col<arr[row].length; col++){
-                arr[row][col] = sc.nextInt();
-            }
-        }
+        // for(int row = 0; row<arr.length; row++){
+        //     // for each col in every row
+        //     for(int col = 0; col<arr[row].length; col++){
+        //         arr[row][col] = sc.nextInt();
+        //     }
+        // }
         // output
         // 1st method
         // for(int row = 0; row<arr.length; row++){
@@ -44,8 +44,22 @@ public class arrays_02 {
         // }
         
         // enhanced for loop method
-        for(int[] a: arr){
-            System.out.println(Arrays.toString(a));
+        // for(int[] a: arr){
+        //     System.out.println(Arrays.toString(a));
+        // }
+
+
+        int[][] arr1 = {
+            {1, 2, 3, 4},
+            {5, 6},
+            {7, 8, 9}
+        };
+
+        for(int row = 0; row<arr1.length; row++){
+            for(int col = 0; col<arr1[row].length; col++){
+                System.out.print(arr1[row][col] + " ");
+            }
+            System.out.println();
         }
 
     }
