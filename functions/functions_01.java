@@ -26,15 +26,19 @@ public class functions_01 {
         // String naam = sc.next();
         // String person = myGreet(naam);
         // System.out.println(person);
-        int a = 2;
-        int b = 4;
+        // int a = 2;
+        // int b = 4;
         // Scanner in = new Scanner(System.in);
         // System.out.println("Enter 1st number");
         // int x = in.nextInt();
         // System.out.println("Enter 2nd number");
         // int y = in.nextInt();
-        swap(a, b);
+        // swap(a, b);
         // System.out.println(a + " " + b);// prints 2, 4 means no swaping happend
+
+        String name = "Amit Ranjan Das";
+        greeting(name);
+        System.out.println(name);
     }
 
     /*
@@ -43,6 +47,11 @@ public class functions_01 {
             return statement;
         }
      */
+
+    static void greeting(String naam) {
+        naam = "Smriti";    // naam will not be changed
+        // System.out.println(naam);
+    }
 
     static void swap(int a, int b) {
         int temp = a;
