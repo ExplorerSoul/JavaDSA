@@ -29,5 +29,6 @@ public class arrays_03 {
         for(int i = 0; i<5; i++){
             System.out.print(list.get(i));  // pass index here, list[index] syntax will not work here
         }
+        sc.close();
     }
 }
