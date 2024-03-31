@@ -22,11 +22,25 @@ public class Main {
 
         // DOUBLY LINKED LIST
 
-        DLL list = new DLL();
-        list.insertFirst(3);
-        list.insertFirst(2);
-        list.insertFirst(8);
-        list.insertFirst(17);
+        // DLL list = new DLL();
+        // list.insertFirst(3);
+        // list.insertFirst(2);
+        // list.insertFirst(8);
+        // list.insertFirst(17);
+        // list.insertLast(99);
+        // list.insert(99 , 65);
+        // list.display();
+
+        // CIRCULAR LINKED LIST
+
+        CLL list = new CLL();
+        list.insert(23);
+        list.insert(5);
+        list.insert(3);
+        list.insert(4);
+        list.insert(8);
+        list.display();
+        list.delete(4);
         list.display();
     }
 }
