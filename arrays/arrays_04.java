@@ -18,5 +18,6 @@ public class arrays_04 {
             }
         }
         System.out.println(list);
+        sc.close();
     }
 }
